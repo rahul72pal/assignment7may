@@ -3,9 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import { Instagram, Linkedin } from 'lucide-react';
 
-const Footer = () => {
+const Footer = ({ className = "" }) => {
   return (
-    <footer className="bg-black text-white px-6 py-10 text-sm">
+    <footer className={`bg-black text-white px-6 py-10 text-sm ${className}`}>
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between border-b border-gray-700 pb-8 gap-8">
